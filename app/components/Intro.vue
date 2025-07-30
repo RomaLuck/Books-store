@@ -37,6 +37,7 @@
   display: flex;
   padding: 87px 68px;
   column-gap: 200px;
+  margin-bottom: 20px;
 
   &__hero {
     display: flex;
