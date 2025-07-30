@@ -4,6 +4,7 @@
 
 <template>
   <Navigation/>
+  <Intro/>
   <slot/>
   <Footer/>
 </template>
