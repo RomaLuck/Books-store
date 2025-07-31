@@ -45,7 +45,7 @@
           </div>
         </div>
       </div>
-      <button class="favorite__text-explore-button">Explore Now</button>
+      <Button class="favorite__text-explore-button">Explore Now</Button>
     </div>
   </div>
 </template>
@@ -56,6 +56,7 @@
   display: flex;
   column-gap: 160px;
   padding: 16px 63px 22px 63px;
+  margin-bottom: 64px;
 
   &__text-title {
     font-style: normal;
@@ -107,18 +108,6 @@
         color: #1C2024;
       }
     }
-  }
-
-  &__text-explore-button {
-    background: #6366F1;
-    border-radius: 4px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 20px;
-    color: #FFFFFF;
-    height: 32px;
-    width: 107px;
   }
 }
 </style>
