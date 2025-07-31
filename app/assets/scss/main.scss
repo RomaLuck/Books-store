@@ -1,5 +1,9 @@
 @use "reset";
 
+body {
+  font-family: Segoe UI, sans-serif;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

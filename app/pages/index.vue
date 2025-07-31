@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import BooksListRow from "~/components/BooksListRow.vue";
-import Book from "~/components/Book.vue";
+import Favorite from "~/components/Favorite.vue";
+import BooksRow from "~/components/BooksRow.vue";
 
 const runtimeConfig = useRuntimeConfig()
 
-const books: Book = [
+const books: IBook[] = [
   {
     id: 1,
     name: "Cooking Made Easy",
@@ -51,7 +51,8 @@ const books: Book = [
 <template>
   <Navigation/>
   <Intro/>
-  <BooksListRow :books="books" :title="`Best Seller Books`"/>
+  <BooksRow :books="books" :title="`Best Seller Books`"/>
+  <Favorite/>
   <Footer/>
 </template>
 
