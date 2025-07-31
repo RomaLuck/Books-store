@@ -54,6 +54,7 @@ const books: IBook[] = [
   <BooksRow :books="books" :title="`Best Seller Books`"/>
   <Favorite/>
   <Award/>
+  <BooksRow :books="books" :title="`New Releases`"/>
   <Footer/>
 </template>
 
