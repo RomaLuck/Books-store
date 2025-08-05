@@ -43,12 +43,12 @@
 
   &__navigation {
     display: flex;
-    column-gap: 20px;
+    column-gap: 36px;
     flex-wrap: wrap;
 
     &__list {
       display: flex;
-      column-gap: 20px;
+      column-gap: 36px;
       text-transform: uppercase;
       font-size: 12.8px;
       flex-wrap: wrap;

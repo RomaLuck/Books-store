@@ -4,6 +4,10 @@ body {
   font-family: Segoe UI, sans-serif;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

@@ -50,11 +50,13 @@ const books: IBook[] = [
 
 <template>
   <Navigation/>
-  <Intro/>
-  <BooksRow :books="books" :title="`Best Seller Books`"/>
-  <Favorite/>
-  <Award/>
-  <BooksRow :books="books" :title="`New Releases`"/>
+  <main class="main">
+    <Intro/>
+    <BooksRow :books="books" :title="`Best Seller Books`"/>
+    <Favorite/>
+    <Award/>
+    <BooksRow :books="books" :title="`New Releases`"/>
+  </main>
   <Footer/>
 </template>
 

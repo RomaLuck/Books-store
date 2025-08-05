@@ -58,6 +58,11 @@
   padding: 16px 63px 22px 63px;
   margin-bottom: 64px;
 
+  @media (width < 1100px) {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
   &__text-title {
     font-style: normal;
     font-weight: 700;
