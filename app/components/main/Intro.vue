@@ -15,7 +15,7 @@
         Find and read more your'll love, and keep track of the books you want to read.
         Be part of the word's largeest community of book lovers on Goodreads.
       </div>
-      <div class="intro__hero-search input-wrapper">
+      <div class="intro__hero-search input-wrapper input-button">
         <input type="text" class="intro__input input" placeholder="Search..."/>
       </div>
     </div>
@@ -35,9 +35,10 @@
   background-color: #E4E4E7;
   color: #1E1B4B;
   display: flex;
-  padding: 87px 68px;
-  column-gap: 200px;
+  justify-content: space-between;
+  padding: 87px 160px 87px 63px;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 
   &__hero {
     display: flex;
@@ -63,25 +64,31 @@
 
   &__image {
     position: relative;
+    width: 280px;
+
+    @media (width < 1100px) {
+      display: none;
+    }
 
     img {
       position: absolute;
     }
 
-    &-first{
+    &-first {
       z-index: 5;
     }
-    &-second{
+
+    &-second {
       z-index: 4;
       left: 25px;
     }
 
-    &-third{
+    &-third {
       z-index: 3;
       left: 44px;
     }
 
-    &-fourth{
+    &-fourth {
       z-index: 2;
       left: 60px;
     }

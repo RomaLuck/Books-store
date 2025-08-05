@@ -10,10 +10,18 @@
       </div>
       <div class="header__navigation">
         <ul class="header__navigation__list">
-          <li class="header__navigation__list-item">Home</li>
-          <li class="header__navigation__list-item">Explore</li>
-          <li class="header__navigation__list-item">Shop</li>
-          <li class="header__navigation__list-item">Sell Your Book</li>
+          <li class="header__navigation__list-item">
+            <NuxtLink to="/">Home</NuxtLink>
+          </li>
+          <li class="header__navigation__list-item">
+            <NuxtLink to="/explore">Explore</NuxtLink>
+          </li>
+          <li class="header__navigation__list-item">
+            <NuxtLink to="/shop">Shop</NuxtLink>
+          </li>
+          <li class="header__navigation__list-item">
+            <NuxtLink to="/sell">Sell Your Book</NuxtLink>
+          </li>
         </ul>
         <img src="/images/header/Img.png" alt="buy" loading="lazy">
       </div>
@@ -43,12 +51,12 @@
 
   &__navigation {
     display: flex;
-    column-gap: 20px;
+    column-gap: 36px;
     flex-wrap: wrap;
 
     &__list {
       display: flex;
-      column-gap: 20px;
+      column-gap: 36px;
       text-transform: uppercase;
       font-size: 12.8px;
       flex-wrap: wrap;

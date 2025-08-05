@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import BooksRow from "~/components/BooksRow.vue";
 
-const runtimeConfig = useRuntimeConfig()
-
 const books: IBook[] = [
   {
     id: 1,
@@ -50,11 +48,11 @@ const books: IBook[] = [
 <template>
   <Navigation/>
   <main class="main">
-    <MainIntro/>
-    <BooksRow :books="books" :title="`Best Seller Books`"/>
-    <MainFavorite/>
-    <MainAward/>
+    <ExploreHero/>
     <BooksRow :books="books" :title="`New Releases`"/>
+    <BooksRow :books="books" :title="`Top Rated Books`"/>
+    <BooksRow :books="books" :title="`Our Suggetion`"/>
+    <BooksRow :books="books" :title="`Most Popular Books`"/>
   </main>
   <Footer/>
 </template>
