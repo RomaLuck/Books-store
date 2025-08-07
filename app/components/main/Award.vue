@@ -31,6 +31,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: start;
     row-gap: 16px;
 
     &-title {
