@@ -4,14 +4,23 @@ import type {NuxtError} from '#app'
 const props = defineProps({
   error: Object as () => NuxtError
 })
+
+const errorDescriptions: Record<number, string> = {
+  404: "The page you're looking for could not be found.",
+  500: "Something went wrong on our end. Please try again later.",
+  403: "You do not have permission to access this page.",
+  400: "Bad request. Please check your input and try again.",
+}
+
+const statusCode = props.error?.statusCode || 500;
+const description = errorDescriptions[statusCode];
 </script>
 
 <template>
   <div class="error">
-    <h1 class="error__code">{{ error?.statusCode }}</h1>
-    <h2 class="error__message">Oops! Page Not Found</h2>
-    <p class="error__description">It seems like you've wandered off the path. The page you're
-      looking for doesn't exist or has been moved.</p>
+    <h1 class="error__code">{{ statusCode }}</h1>
+    <h2 class="error__message">Oops! {{ error?.message || "Something went wrong" }}</h2>
+    <p class="error__description">{{ description }}</p>
     <NuxtLink to="/">
       <Button type="button" class="back-home-button button">
         <img src="/images/svg/back-home.svg" alt="back home">
@@ -30,6 +39,7 @@ const props = defineProps({
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 10px;
 
   &__code {
     font-style: normal;
@@ -65,7 +75,7 @@ const props = defineProps({
     max-width: 500px;
   }
 
-  .back-home-button{
+  .back-home-button {
     gap: 8px;
   }
 }
