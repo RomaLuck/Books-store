@@ -1,13 +1,17 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    compatibilityDate: '2025-07-15',
+    compatibilityDate: "2025-07-15",
     devtools: {enabled: false},
-    modules: ['@nuxt/image', '@nuxt/icon', '@nuxt/fonts'],
+    modules: [
+        "@nuxt/image",
+        "@nuxt/icon",
+        "@nuxt/fonts",
+    ],
     runtimeConfig: {
-        apiSecret: '123',
+        apiSecret: "123",
         public: {
-            apiBase: '/api'
-        }
+            apiBase: "/api",
+        },
     },
-    css: ['~/assets/scss/main.scss'],
-})
+    css: ["~/assets/scss/main.scss"],
+});

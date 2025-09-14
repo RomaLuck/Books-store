@@ -1,3 +1,7 @@
+<script setup lang="ts">
+// no logic needed
+</script>
+
 <template>
   <div id="product-filter">
     <h4>SUBJECTS</h4>
@@ -31,10 +35,12 @@
               <span class="results">(566635)</span>
             </a>
           </li>
-          <li><a href="#">
-            <span class="list-name">Australian Authors Books</span>
-            <span class="results">(3166)</span>
-          </a></li>
+          <li>
+            <a href="#">
+              <span class="list-name">Australian Authors Books</span>
+              <span class="results">(3166)</span>
+            </a>
+          </li>
           <li>
             <a href="#" id="reduced-to-clear">
               <span class="list-name">Hot Prices</span>
@@ -102,60 +108,130 @@
           <ul class="refinement-detail-list">
             <li>
               <div id="price-link-price-lessthan-AUD-5" class="b-checkbox">
-                <input type="checkbox" id="price-checkbox-price-lessthan-AUD-5" name="prices" value="price-lessthan-AUD-5">
-                <label for="price-checkbox-price-lessthan-AUD-5"><span>Under $5</span> <span class="results">(141)</span></label>
+                <input
+                  type="checkbox"
+                  id="price-checkbox-price-lessthan-AUD-5"
+                  name="prices"
+                  value="price-lessthan-AUD-5"
+                />
+                <label for="price-checkbox-price-lessthan-AUD-5"
+                  ><span>Under $5</span>
+                  <span class="results">(141)</span></label
+                >
               </div>
             </li>
             <li>
-              <div id="price-link-price-between-AUD-5-and-10" class="b-checkbox">
-                <input type="checkbox" id="price-checkbox-price-between-AUD-5-and-10" name="prices" value="price-between-AUD-5-and-10">
-                <label for="price-checkbox-price-between-AUD-5-and-10"><span>$5 - $10</span> <span class="results">(2103)</span></label>
+              <div
+                id="price-link-price-between-AUD-5-and-10"
+                class="b-checkbox"
+              >
+                <input
+                  type="checkbox"
+                  id="price-checkbox-price-between-AUD-5-and-10"
+                  name="prices"
+                  value="price-between-AUD-5-and-10"
+                />
+                <label for="price-checkbox-price-between-AUD-5-and-10"
+                  ><span>$5 - $10</span>
+                  <span class="results">(2103)</span></label
+                >
               </div>
             </li>
             <li>
-              <div id="price-link-price-between-AUD-10-and-20" class="b-checkbox">
-                <input type="checkbox" id="price-checkbox-price-between-AUD-10-and-20" name="prices" value="price-between-AUD-10-and-20">
-                <label for="price-checkbox-price-between-AUD-10-and-20"><span>$10 - $20</span> <span class="results">(65916)</span></label>
+              <div
+                id="price-link-price-between-AUD-10-and-20"
+                class="b-checkbox"
+              >
+                <input
+                  type="checkbox"
+                  id="price-checkbox-price-between-AUD-10-and-20"
+                  name="prices"
+                  value="price-between-AUD-10-and-20"
+                />
+                <label for="price-checkbox-price-between-AUD-10-and-20"
+                  ><span>$10 - $20</span>
+                  <span class="results">(65916)</span></label
+                >
               </div>
             </li>
             <li>
-              <div id="price-link-price-between-AUD-20-and-30" class="b-checkbox">
-                <input type="checkbox" id="price-checkbox-price-between-AUD-20-and-30" name="prices" value="price-between-AUD-20-and-30">
-                <label for="price-checkbox-price-between-AUD-20-and-30"><span>$20 - $30</span> <span class="results">(229180)</span></label>
+              <div
+                id="price-link-price-between-AUD-20-and-30"
+                class="b-checkbox"
+              >
+                <input
+                  type="checkbox"
+                  id="price-checkbox-price-between-AUD-20-and-30"
+                  name="prices"
+                  value="price-between-AUD-20-and-30"
+                />
+                <label for="price-checkbox-price-between-AUD-20-and-30"
+                  ><span>$20 - $30</span>
+                  <span class="results">(229180)</span></label
+                >
               </div>
             </li>
             <li>
-              <div id="price-link-price-between-AUD-30-and-50" class="b-checkbox">
-                <input type="checkbox" id="price-checkbox-price-between-AUD-30-and-50" name="prices" value="price-between-AUD-30-and-50">
-                <label for="price-checkbox-price-between-AUD-30-and-50"><span>$30 - $50</span> <span class="results">(214475)</span></label>
+              <div
+                id="price-link-price-between-AUD-30-and-50"
+                class="b-checkbox"
+              >
+                <input
+                  type="checkbox"
+                  id="price-checkbox-price-between-AUD-30-and-50"
+                  name="prices"
+                  value="price-between-AUD-30-and-50"
+                />
+                <label for="price-checkbox-price-between-AUD-30-and-50"
+                  ><span>$30 - $50</span>
+                  <span class="results">(214475)</span></label
+                >
               </div>
             </li>
             <li>
-              <div id="price-link-price-between-AUD-50-and-100" class="b-checkbox">
-                <input type="checkbox" id="price-checkbox-price-between-AUD-50-and-100" name="prices" value="price-between-AUD-50-and-100">
-                <label for="price-checkbox-price-between-AUD-50-and-100"><span>$50 - $100</span> <span class="results">(49784)</span></label>
+              <div
+                id="price-link-price-between-AUD-50-and-100"
+                class="b-checkbox"
+              >
+                <input
+                  type="checkbox"
+                  id="price-checkbox-price-between-AUD-50-and-100"
+                  name="prices"
+                  value="price-between-AUD-50-and-100"
+                />
+                <label for="price-checkbox-price-between-AUD-50-and-100"
+                  ><span>$50 - $100</span>
+                  <span class="results">(49784)</span></label
+                >
               </div>
             </li>
             <li>
               <div id="price-link-price-morethan-AUD-100" class="b-checkbox">
-                <input type="checkbox" id="price-checkbox-price-morethan-AUD-100" name="prices" value="price-morethan-AUD-100">
-                <label for="price-checkbox-price-morethan-AUD-100"><span>Over $100</span> <span class="results">(6785)</span></label>
+                <input
+                  type="checkbox"
+                  id="price-checkbox-price-morethan-AUD-100"
+                  name="prices"
+                  value="price-morethan-AUD-100"
+                />
+                <label for="price-checkbox-price-morethan-AUD-100"
+                  ><span>Over $100</span>
+                  <span class="results">(6785)</span></label
+                >
               </div>
             </li>
           </ul>
         </div>
       </fieldset>
-      <input type="hidden" name="languages" value="ENG">
-      <input type="hidden" name="url" value="/books/fiction/cF-p1.html?sorter=sortorder-en-dsc">
+      <input type="hidden" name="languages" value="ENG" />
+      <input
+        type="hidden"
+        name="url"
+        value="/books/fiction/cF-p1.html?sorter=sortorder-en-dsc"
+      />
     </form>
   </div>
 </template>
 
-<script setup lang="ts">
-// no logic needed
-</script>
-
 <style scoped lang="scss">
-@import "@/assets/scss/main.scss";
+@use "@/assets/scss/main.scss";
 </style>
-
