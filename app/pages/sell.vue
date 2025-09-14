@@ -76,6 +76,16 @@ const handleSubmit = async () => {
         />
       </div>
       <div class="form-group">
+        <label for="author">Author:</label>
+        <input
+            type="text"
+            id="author"
+            v-model="formData.author"
+            placeholder="Input author name"
+            required
+        />
+      </div>
+      <div class="form-group">
         <label for="description">Input description:</label>
         <textarea
             id="description"
