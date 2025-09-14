@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import * as z from "zod";
 import {ref, watch} from "vue";
+import {BOOK_CONDITIONS} from "@/utils/bookConditions";
 
 const schema = z.object({
   name: z.string().min(3, "Name is required"),
@@ -8,7 +9,7 @@ const schema = z.object({
   description: z.string().min(10, "Description must be at least 10 characters"),
   price: z.number().min(0, "Price must be a positive number"),
   category: z.string().min(3, "Category is required"),
-  condition: z.enum(["new", "like new", "used", "very used"], "Condition is required"),
+  condition: z.enum(BOOK_CONDITIONS.map(c => c.value) as [string, ...string[]], "Condition is required"),
   image: z.file().mime(["image/jpeg", "image/png"], "Only JPEG or PNG images are allowed"),
 });
 
@@ -119,10 +120,9 @@ const handleSubmit = async () => {
       <div class="form-group">
         <label for="condition">Condition:</label>
         <select id="condition" v-model="formData.condition" required>
-          <option value="new">New</option>
-          <option value="like new">Like new</option>
-          <option value="used">Used</option>
-          <option value="very used">Very used</option>
+          <option v-for="condition in BOOK_CONDITIONS" :key="condition.value" :value="condition.value">
+            {{ condition.label }}
+          </option>
         </select>
       </div>
       <div class="form-group">
