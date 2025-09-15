@@ -20,10 +20,10 @@
       </div>
     </div>
     <div class="intro__image">
-      <img class="intro__image-first" src="/images/intro/Background1.png" alt="intro-book-first" loading="lazy">
-      <img class="intro__image-second" src="/images/intro/Background2.png" alt="intro-book-second" loading="lazy">
-      <img class="intro__image-third" src="/images/intro/Background3.png" alt="intro-book-third" loading="lazy">
-      <img class="intro__image-fourth" src="/images/intro/Background4.png" alt="intro-book-fourth" loading="lazy">
+      <NuxtImg class="intro__image-first" src="/images/intro/Background1.png" alt="intro-book-first" loading="lazy"/>
+      <NuxtImg class="intro__image-second" src="/images/intro/Background2.png" alt="intro-book-second" loading="lazy"/>
+      <NuxtImg class="intro__image-third" src="/images/intro/Background3.png" alt="intro-book-third" loading="lazy"/>
+      <NuxtImg class="intro__image-fourth" src="/images/intro/Background4.png" alt="intro-book-fourth" loading="lazy"/>
     </div>
   </div>
 </template>

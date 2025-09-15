@@ -1,6 +1,6 @@
-export const BOOK_CONDITIONS = [
-  { value: "new", label: "New" },
-  { value: "like new", label: "Like new" },
-  { value: "used", label: "Used" },
-  { value: "very used", label: "Very used" }
+export const BOOK_CONDITIONS: { value: string; label: string }[] = [
+    {value: "new", label: "New"},
+    {value: "like new", label: "Like new"},
+    {value: "used", label: "Used"},
+    {value: "very used", label: "Very used"}
 ];

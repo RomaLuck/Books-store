@@ -5,7 +5,7 @@
 <template>
   <div class="favorite">
     <div class="favorite__image">
-      <img src="/images/favorite/favorite.png" alt="favorite book">
+      <NuxtImg src="/images/favorite/favorite.png" alt="favorite book"/>
     </div>
     <div class="favorite__text">
       <div class="favorite__text-title">

@@ -13,7 +13,7 @@
       </Button>
     </div>
     <div class="award__image">
-      <img src="/images/award/award.png" alt="award">
+      <NuxtImg src="/images/award/award.png" alt="award"/>
     </div>
   </div>
 </template>

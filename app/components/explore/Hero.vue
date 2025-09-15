@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="hero__image">
-      <img src="/images/explore/hero/award.png" alt="award">
+      <NuxtImg src="/images/explore/hero/award.png" alt="award"/>
     </div>
   </div>
 </template>

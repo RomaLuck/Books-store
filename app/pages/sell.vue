@@ -9,7 +9,7 @@ const schema = z.object({
   description: z.string().min(10, "Description must be at least 10 characters"),
   price: z.number().min(0, "Price must be a positive number"),
   category: z.string().min(3, "Category is required"),
-  condition: z.enum(BOOK_CONDITIONS.map(c => c.value) as [string, ...string[]], "Condition is required"),
+  condition: z.enum(BOOK_CONDITIONS.map(c => c.value), "Condition is required"),
   image: z.file().mime(["image/jpeg", "image/png"], "Only JPEG or PNG images are allowed"),
 });
 
@@ -138,7 +138,7 @@ const handleSubmit = async () => {
       <button type="submit" class="form-button">Add book</button>
     </form>
     <div class="image-preview-container">
-      <img :src="previewUrl" alt="Preview" class="image-preview"/>
+      <NuxtImg :src="previewUrl" alt="Preview" class="image-preview"/>
     </div>
   </div>
 </template>

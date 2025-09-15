@@ -53,7 +53,7 @@ function escListener(e: KeyboardEvent) {
             <NuxtLink to="/sell">Sell Your Book</NuxtLink>
           </li>
         </ul>
-        <img src="/images/header/Img.png" alt="buy" loading="lazy">
+        <NuxtImg src="/images/header/Img.png" alt="buy" loading="lazy"/>
       </div>
       <!-- Burger icon -->
       <button class="burger-btn" @click="openMenu" aria-label="Open menu" v-show="!isMenuOpen">
@@ -78,7 +78,7 @@ function escListener(e: KeyboardEvent) {
             <NuxtLink to="/sell" @click.native="closeMenu">Sell Your Book</NuxtLink>
           </li>
         </ul>
-        <img src="/images/header/Img.png" alt="buy" loading="lazy" class="burger-img">
+        <NuxtImg src="/images/header/Img.png" alt="buy" loading="lazy" class="burger-img"/>
         <Filters v-if="route.path === '/shop'"/>
       </nav>
     </div>

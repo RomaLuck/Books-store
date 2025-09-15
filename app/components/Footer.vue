@@ -29,13 +29,13 @@
         <h3>We Accept</h3>
         <div class="footer__pay-logo-list">
           <div class="footer__pay-logo-item">
-            <img src="/images/footer/Visa.png" alt="Visa" loading="lazy"/>
+            <NuxtImg src="/images/footer/Visa.png" alt="Visa" loading="lazy"/>
           </div>
           <div class="footer__pay-logo-item">
-            <img src="/images/footer/Mastercard.png" alt="Visa" loading="lazy"/>
+            <NuxtImg src="/images/footer/Mastercard.png" alt="Visa" loading="lazy"/>
           </div>
           <div class="footer__pay-logo-item">
-            <img src="/images/footer/American%20Express.png" alt="Visa" loading="lazy"/>
+            <NuxtImg src="/images/footer/American%20Express.png" alt="Visa" loading="lazy"/>
           </div>
         </div>
       </div>

@@ -23,7 +23,7 @@ const description = errorDescriptions[statusCode];
     <p class="error__description">{{ description }}</p>
     <NuxtLink to="/">
       <Button type="button" class="back-home-button button">
-        <img src="/images/svg/back-home.svg" alt="back home">
+        <NuxtImg src="/images/svg/back-home.svg" alt="back home"/>
         Back to Home
       </Button>
     </NuxtLink>
