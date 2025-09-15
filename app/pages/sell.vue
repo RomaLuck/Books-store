@@ -4,7 +4,7 @@ import {ref, watch} from "vue";
 import {BOOK_CONDITIONS} from "@/utils/bookConditions";
 
 const schema = z.object({
-  name: z.string().min(3, "Name is required"),
+  title: z.string().min(3, "Title is required"),
   author: z.string().min(3, "Author is required"),
   description: z.string().min(10, "Description must be at least 10 characters"),
   price: z.number().min(0, "Price must be a positive number"),
@@ -16,7 +16,7 @@ const schema = z.object({
 type Schema = z.infer<typeof schema>;
 
 const formData = reactive<Schema>({
-  name: "",
+  title: "",
   author: "",
   description: "",
   price: 0,
@@ -45,7 +45,7 @@ const handleSubmit = async () => {
     console.error(result.error.message);
   } else {
     const fd = new FormData();
-    fd.append("name", formData.name);
+    fd.append("title", formData.title);
     fd.append("description", formData.description);
     fd.append("price", formData.price.toString());
     fd.append("category", formData.category);
@@ -67,12 +67,12 @@ const handleSubmit = async () => {
   <div class="main">
     <form @submit.prevent="handleSubmit" class="form">
       <div class="form-group">
-        <label for="name">Name:</label>
+        <label for="title">Title:</label>
         <input
             type="text"
-            id="name"
-            v-model="formData.name"
-            placeholder="Input book name"
+            id="title"
+            v-model="formData.title"
+            placeholder="Input book title"
             required
         />
       </div>
