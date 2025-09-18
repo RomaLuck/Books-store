@@ -7,10 +7,10 @@ defineProps<{
 <template>
   <div class="book">
     <div class="book__image">
-      <img :src="book.image_url" alt="cooking made easy" loading="lazy">
+      <img :src="book.imageUrl" alt="cooking made easy" loading="lazy">
       <div class="book__price">{{ book.price }}</div>
     </div>
-    <div class="book__name">{{ book.name }}</div>
+    <div class="book__name">{{ book.title }}</div>
     <div class="book__rating">{{ book.rating }}</div>
     <div class="book__description">{{ book.description }}</div>
     <button class="book__add-button">

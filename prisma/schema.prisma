@@ -3,7 +3,7 @@
 
 generator client {
   provider = "prisma-client-js"
-  output   = "../app/generated/prisma"
+  // output   = "../app/generated/prisma"
 }
 
 datasource db {
@@ -36,11 +36,12 @@ model Post {
 }
 
 model Book {
-  id          Int           @id @default(autoincrement())
+  id          String        @id @default(uuid())
   title       String
   author      String
   description String?
   price       Float
+  rating      Int
   category    Category      @relation(fields: [categoryId], references: [id])
   categoryId  Int
   condition   BookCondition

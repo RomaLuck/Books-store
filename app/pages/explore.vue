@@ -1,48 +1,8 @@
 <script setup lang="ts">
 import BooksRow from "~/components/BooksRow.vue";
 
-const books: IBook[] = [
-  {
-    id: 1,
-    name: "Cooking Made Easy",
-    description: "Simple and delicious recipes for everyday cooking.",
-    price: "₹9.99",
-    rating: 5,
-    image_url: "/images/best-seller-books/cooking-made-easy.png"
-  },
-  {
-    id: 1,
-    name: "Cooking Made Easy",
-    description: "Simple and delicious recipes for everyday cooking.",
-    price: "₹9.99",
-    rating: 5,
-    image_url: "/images/best-seller-books/cooking-made-easy.png"
-  },
-  {
-    id: 1,
-    name: "Cooking Made Easy",
-    description: "Simple and delicious recipes for everyday cooking.",
-    price: "₹9.99",
-    rating: 5,
-    image_url: "/images/best-seller-books/cooking-made-easy.png"
-  },
-  {
-    id: 1,
-    name: "Cooking Made Easy",
-    description: "Simple and delicious recipes for everyday cooking.",
-    price: "₹9.99",
-    rating: 5,
-    image_url: "/images/best-seller-books/cooking-made-easy.png"
-  },
-  {
-    id: 1,
-    name: "Cooking Made Easy",
-    description: "Simple and delicious recipes for everyday cooking.",
-    price: "₹9.99",
-    rating: 5,
-    image_url: "/images/best-seller-books/cooking-made-easy.png"
-  }
-]
+const books: IBook[] = await $fetch('/api/books');
+
 </script>
 
 <template>

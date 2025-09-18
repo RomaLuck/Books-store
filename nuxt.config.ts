@@ -8,6 +8,9 @@ export default defineNuxtConfig({
         "@nuxt/fonts",
         "@prisma/nuxt"
     ],
+    prisma: {
+        autoSetupPrisma: true,
+    },
     runtimeConfig: {
         apiSecret: "123",
         public: {
@@ -15,4 +18,9 @@ export default defineNuxtConfig({
         },
     },
     css: ["~/assets/scss/main.scss"],
+    nitro: {
+        experimental: {
+            tasks: true
+        }
+    },
 });
