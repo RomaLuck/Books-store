@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import Rating from "~/components/Rating.vue";
+
 defineProps<{
   book: IBook
 }>()
@@ -11,7 +13,7 @@ defineProps<{
       <div class="book__price">{{ book.price }}</div>
     </div>
     <div class="book__name">{{ book.title }}</div>
-    <div class="book__rating">{{ book.rating }}</div>
+    <Rating :rating="book.rating" :max="5"/>
     <div class="book__description">{{ book.description }}</div>
     <button class="book__add-button">
       Add To Cart
